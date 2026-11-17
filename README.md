@@ -1,13 +1,13 @@
-<img src="assets/banner.png" alt="Chamudith Amarasinghe, IT Systems Engineer. AI does the legwork, people make the call: agent finds it, agent drafts the fix, you approve, change runs." width="100%">
+<img src="assets/banner.png" alt="Chamudith Amarasinghe, AI Automation Engineer, forward-deployed, IT Ops. I build agents that run IT operations. Humans approve every change." width="100%">
 
 <p>
-<img src="https://img.shields.io/badge/Open_to-AI_automation_·_IT_systems_·_IAM_·_Forward--deployed-F2913D?style=flat-square" alt="Open to AI automation, IT systems, IAM and forward-deployed roles">
+<img src="https://img.shields.io/badge/Open_to-AI_engineering_·_Forward--deployed_·_IT_systems_engineering_·_Automation_·_IAM-F2913D?style=flat-square" alt="Open to AI engineering, forward-deployed, IT systems engineering, automation and IAM roles">
 <img src="https://img.shields.io/badge/NYC_/_NJ_·_remote_·_relocation-available_now-2EA043?style=flat-square" alt="NYC / NJ, remote or relocation, available now">
 </p>
 
-I'm an IT systems engineer who builds **AI agents for device, identity and access work**. They find the problem, draft the fix and wait for a person to approve it. Nothing changes without a human, and everything is dry-run first.
+I'm an **AI automation engineer** with deep IT operations roots. I design and ship **agentic systems that run real infrastructure**: Claude-based agents wired into device, identity and access platforms through MCP, running on schedules, proposing changes with their reasoning, and executing only after a human approves. Every change is dry-run first and logged.
 
-**9 years in IT**, from desk-side support to systems engineering, running Mac, Windows and iOS fleets of **1,000+ devices** in regulated industries.
+I work like a **forward-deployed engineer**: sit with the people who own the problem, map how the systems actually behave, then build the automation, the guardrails and the rollout. **9 years** across enterprise IT and systems engineering, owning Mac, Windows and iOS fleets of **1,000+ devices**, identity and SSO in regulated industries. That operational depth is why my agents are safe to put in production.
 
 ## ⚡ Highlights
 
@@ -40,20 +40,20 @@ flowchart LR
 </tr>
 <tr>
 <td width="33%" valign="top"><a href="https://github.com/chamu262/nova-os-demo"><img src="assets/nova-os.jpg" alt="Nova OS crew and chat"></a><br><b><a href="https://github.com/chamu262/nova-os-demo">nova-os-demo</a></b><br>A personal AI team: a lead agent routes each request to the right specialist.</td>
-<td width="33%" valign="top"><a href="https://github.com/chamu262/godfather"><img src="assets/godfather.jpg" alt="Godfather dashboard"></a><br><b><a href="https://github.com/chamu262/godfather">godfather</a></b><br>A supervisor setup for Claude Code: sessions, skills, memory and a live dashboard.</td>
+<td width="33%" valign="top"><a href="https://github.com/chamu262/claude-godfather"><img src="assets/godfather.jpg" alt="Godfather dashboard"></a><br><b><a href="https://github.com/chamu262/claude-godfather">claude-godfather</a></b><br>A supervisor for multi-agent Claude Code work: orchestration, skills, memory and a live ops dashboard.</td>
 <td width="33%" valign="top"><a href="https://github.com/chamu262/presentations"><img src="assets/talk.jpg" alt="From Prompts to Agent Teams cover slide"></a><br><b><a href="https://github.com/chamu262/presentations">presentations</a></b><br>Slides and speaker notes, each practice linked to a runnable demo.</td>
 </tr>
 </table>
 
 ## 🔭 What I do
 
-*   **Agentic IT operations:** scheduled jobs that propose changes, with approval gates and dry runs.
-*   **AI connected to IT systems** through read-only MCP tools for devices, users, groups and access.
+*   **Agentic operations:** production agents on schedules that detect, propose and (after approval) execute changes, with dry runs, audit logs and rollback.
+*   **MCP integrations:** tool servers that give LLM agents safe, scoped access to devices, users, groups and access data.
+*   **Multi-agent orchestration with Claude Code:** a supervisor session, project leads, skills, memory and approval gates.
 *   **AI-assisted access reviews:** rules flag leavers, unused admin rights and idle paid seats; the agent explains each flag.
 *   **Zero-touch deployment** with Jamf, Intune and Automox, plus staged rollouts gated by conditional access and compliance.
 *   **Migrations end to end:** MDM platforms, and VPN from Tailscale to NetBird.
-*   **Automations and SSO:** jobs on Google Cloud Run, SSO and SAML app integrations.
-*   **Claude Code as a team:** a supervisor session, project masters, skills, memory and approval gates.
+*   **Automation platform:** Python and Node jobs on Google Cloud Run with CI, secrets handling and SSO/SAML integrations.
 
 ## 💻 Tech stack
 
@@ -95,4 +95,4 @@ flowchart LR
 
 ## 📫 Let's talk
 
-I'm looking for my next role in AI automation, IT systems, identity/IAM or forward-deployed engineering. The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/chamudith-amarasinghe-ab1223216).
+I'm looking for my next role as an **AI / automation engineer**, **forward-deployed engineer** or **IT systems engineer**, especially where agents meet real infrastructure, identity and operations. The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/chamudith-amarasinghe-ab1223216).
