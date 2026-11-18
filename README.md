@@ -14,7 +14,8 @@ I work like a **forward-deployed engineer**: sit with the people who own the pro
 | Result | What it means |
 |---|---|
 | **< 30 min** | New-device setup with zero-touch Jamf, Intune and Automox, down from between 8 hours and 2 days |
-| **5 open-source demos** | Agentic IT tools you can clone and run on made-up data, most with no API key |
+| **6 open-source projects** | Agentic IT tools you can clone and run on made-up data, most with no API key, all with CI |
+| **1 package on PyPI** | [`itops-rag`](https://pypi.org/project/itops-rag/): retrieval-augmented answers for IT ops, measured by an eval that gates every release |
 | **1 talk** | [From Prompts to Agent Teams](https://github.com/chamu262/presentations/tree/main/2026%20-%20From%20Prompts%20to%20Agent%20Teams): six practices that change AI results now |
 
 ## 🧭 How I build agents
@@ -31,6 +32,22 @@ flowchart LR
 ```
 
 ## 🧰 Projects
+
+### Featured: [itops-rag](https://github.com/chamu262/itops-rag)
+
+<a href="https://github.com/chamu262/itops-rag"><img src="assets/itops-rag.jpg" alt="IT Ops RAG web UI: search for an Autopilot error code with redacted, access-tagged sources" width="60%" align="right"></a>
+
+**Cited answers for IT operations** from runbooks, KB articles, past tickets, change records and vendor docs.
+`pip install itops-rag`
+
+- Hybrid BM25 + vector search, a local cross-encoder reranker and a doc-type prior, so runbooks beat look-alike tickets
+- Free "I don't know" before any model call: off-topic questions, unknown error codes and unknown products cost $0
+- Redaction at ingest, access tags in every query, injection-safe context, and a monthly budget cap
+- CLI, web UI, a read-only MCP server for Claude Code, a Slack stub, and a 15-template prompt library
+- 66-question eval: primary-doc hit@4 0.98, refusal accuracy 1.00, enforced in CI
+- [How it works, visually](https://github.com/chamu262/itops-rag/blob/main/docs/how-it-works.md): the database, chunking, embeddings and retrieval, with one question traced stage by stage
+
+<br clear="right">
 
 <table>
 <tr>
@@ -49,6 +66,7 @@ flowchart LR
 
 *   **Agentic operations:** production agents on schedules that detect, propose and (after approval) execute changes, with dry runs, audit logs and rollback.
 *   **MCP integrations:** tool servers that give LLM agents safe, scoped access to devices, users, groups and access data.
+*   **Retrieval-augmented generation for IT knowledge:** hybrid search, local reranking, cited answers, free refusals and eval-gated releases ([itops-rag](https://github.com/chamu262/itops-rag)).
 *   **Multi-agent orchestration with Claude Code:** a supervisor session, project leads, skills, memory and approval gates.
 *   **AI-assisted access reviews:** rules flag leavers, unused admin rights and idle paid seats; the agent explains each flag.
 *   **Zero-touch deployment** with Jamf, Intune and Automox, plus staged rollouts gated by conditional access and compliance.
@@ -61,6 +79,13 @@ flowchart LR
 <img src="https://img.shields.io/badge/Claude_Code-191919?style=flat-square&logo=claude&logoColor=D97757" alt="Claude Code">
 <img src="https://img.shields.io/badge/Claude_API-191919?style=flat-square&logo=anthropic&logoColor=white" alt="Claude API">
 <img src="https://img.shields.io/badge/MCP-191919?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="Model Context Protocol">
+
+**RAG & retrieval**<br>
+<img src="https://img.shields.io/badge/SQLite_FTS5_·_sqlite--vec-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite FTS5 and sqlite-vec">
+<img src="https://img.shields.io/badge/ChromaDB-1F2937?style=flat-square" alt="ChromaDB">
+<img src="https://img.shields.io/badge/ONNX_embeddings_·_rerankers-1F2937?style=flat-square&logo=onnx&logoColor=white" alt="ONNX embeddings and rerankers">
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain">
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
 
 **Endpoint & identity**<br>
 <img src="https://img.shields.io/badge/Jamf_Pro-1F2937?style=flat-square" alt="Jamf Pro">
